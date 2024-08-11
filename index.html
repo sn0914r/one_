@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index Page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="Styles.css">
+    <!-- <script src="script.js" defer></script> -->
+     <script src="cleanScript.js" defer></script>
+
+</head>
+<body>
+    <div id="mobile">
+        SITE NOT READY FOR MOBILE VERSION SWITCH TO DESKTOP MODE.
+    </div>
+    <!--Header-->
+    <header>
+        <!--logo-->
+        <div class="logo"><img src="logo2.png" alt="PDFimg" width="55" height="40" style="opacity: 0.6;"></div>
+        <!--navbar-->
+        <nav>
+            <ol>
+                <li><a href="#searchBarBox" id="home">Home</a></li>
+                <li><a href="#flexbox" id="pdf">PDFs</a></li>
+                <li><a href="" id="aboutNav">About</a></li>
+            </ol>
+        </nav>
+
+    </header>    
+
+    <!--main-->
+    <main>
+
+        <!--search filter area-->
+        <div class="search_filter_box" id="searchBarBox">
+
+            <p class="text_above_searchBar">Search and download here</p>
+            
+            <div class="line_above_searchBar"></div>
+            
+            <div class="searchBar_input">
+                
+                <input type="text" id="searchBar" placeholder="Search here">
+                <button id="search_button">Search</button>
+            
+            </div>
+        </div>
+
+       <!--years_flexBox-->
+        <div class="years_flexBox" id="flexbox">
+
+            <!--Year 1-->
+            <a href="#show_table" class="hyper_links_to_table">
+                <div class="years_box year1">
+                    <!--circle-->
+                    <div class="circle circle_1">I</div>
+                    <!--text-->
+                    <div class="circle_text_1 circle_text">
+                        <p class="total_subjects_1 total_subjects">Total Subjects </p>
+                        <p class="available_pdfs_1 available_pdfs">Available : 10</p>
+                        <div class="year_name_below_circle"> Year 1</div>
+                    </div>
+                </div> 
+            </a>
+            <!--Year 1 end-->
+
+            <!--Year 2-->
+            <a href="#show_table" class="hyper_links_to_table">
+                <div class="years_box year2">
+                    <!--circle-->
+                    <div class="circle circle_2">II</div>
+                    <!--text-->
+                    <div class="circle_text_2 circle_text">
+                        <p class="total_subjects_2 total_subjects">Not available</p>
+                        <p class="available_pdfs_2 available_pdfs">Not available</p>
+                        <div class="year_name_below_circle"> Year 2</div>
+                    </div>
+                </div> 
+            </a>
+            <!--Year 2 end-->
+
+            <!--Year 3-->
+            <a href="#show_table" class="hyper_links_to_table">
+                <div class="years_box year3">
+                        <!--circle-->
+                        <div class="circle circle_3">III</div>
+                        <!--text-->
+                        <div class="circle_text_3 circle_text">
+                            <p class="total_subjects_3 total_subjects">Not available</p>
+                            <p class="available_pdfs_3 available_pdfs">Not available</p>
+                            <div class="year_name_below_circle"> Year 3</div>
+                        </div>
+                </div>
+            </a> 
+            <!--Year 3 end-->
+
+            <!--Year 4-->
+            <a href="#show_table" class="hyper_links_to_table">
+                <div class="years_box year4">
+                    <!--circle-->
+                    <div class="circle circle_4">IV</div>
+                    <!--text-->
+                    <div class="circle_text_4 circle_text">
+                        <p class="total_subjects_4 total_subjects">Not available</p>
+                        <p class="available_pdfs_4 available_pdfs">text</p>
+                    <div class="year_name_below_circle"> Year 4</div>
+                    </div>
+                </div> 
+            <!--Year 4 end-->
+
+        </div>
+        <!--years_flexBox end-->
+
+
+        <!--PDFs Table-->
+        <div class="table_box">
+            <table id="sallshow_table">
+
+                <!--caption : year Number -->
+                <caption><span id="year_caption"> Select any </span>year :-</caption>
+
+                <!--table header-->
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Subject</th>
+                        <th>Question<br>Banks</th>
+                        <th>Answer<br>Banks</th>
+                        <th>Class Works</th>
+                    </tr>
+                </thead>
+                <!--table header end-->
+
+                <!--table body-->
+                <tbody id="table_body">
+
+                </tbody>
+                <!--table body end-->
+
+            </table>
+            <!--table end-->
+
+        </div>
+        <!--PDFs table end-->
+        
+    </main>
+    <!--main end-->
+
+
+    <!--footer start-->
+    <footer>
+        <p>made by vinod and siva</p>
+        <div class="githubs_footer">
+
+            <p><a href="">github</a></p>
+            <p><a href="">github</a></p>
+
+        </div>
+    </footer>
+</body>
+</html>

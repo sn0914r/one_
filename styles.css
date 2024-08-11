@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: orbitron;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+/* body */
+body{
+
+    display: flex;
+    flex-direction: column;
+    /* background-image: linear-gradient(to bottom, #c1e8ff, #7da0c8); */
+    background-image:;
+    
+}
+
+/* header*/
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 8vh;
+    padding: 0px 20px;
+    border-bottom: 1px solid;
+    
+
+    /*temporary styles*/
+    background-color: #101f36;
+
+}
+nav ol{
+    
+    display: flex;
+    gap: 20px;
+
+    padding: 0px 30px;
+
+    list-style-type: none;
+
+    /*temporary styles*/
+    /* background-color: yellowgreen; */
+}
+nav a{
+
+    color: white;
+    text-decoration: none;
+
+}
+nav a:hover{
+
+    color: yellow;
+    border-bottom:1px solid white;
+
+}
+nav a:active{
+    color: blue;
+}
+
+/* main */
+main{
+    
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at center, #5483b3, #052659);
+
+}
+/*Search Area*/
+.search_filter_box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #bcfdff; */
+
+    height: 60vh;
+    border-bottom: 1px solid black;
+
+    /* temporary styles */
+    /* background-color: blue; */
+    /* gap: 20px; */
+    font-size: small;
+    letter-spacing: 1px;
+}
+.text_above_searchBar{
+
+    text-transform: uppercase;
+
+}
+.line_above_searchBar{
+
+    width: 300px;
+
+    border-bottom:1px solid rgba(255, 255, 255, 0.574);
+    margin: 5px;
+    
+}
+.searchBar_input>input{
+
+    width: 300px;
+    height: 40px;
+
+    padding: 20px;
+
+    background-color: #d9d9d9;
+
+    border-style: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    color: #021024;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+
+}
+#search_button{
+
+    width: 60px;
+    height: 40px;
+
+    background-color: 
+    blue;
+
+    outline: none;
+    border-style: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: x-small;
+}
+
+
+/*flex box*/
+
+.circle{
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    max-width: 12vh;
+    max-height: 12vh;
+    min-height: 8vh;
+    min-width: 8vh;
+
+    background-color: #021024;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #c1e8ff;
+    font-size: xx-large;
+}
+
+.years_box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 300px;
+    min-width: 200px;
+    margin: 10px;
+    height: 25vh;
+
+    
+}
+.years_flexBox{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #C5BAC4;
+    overflow-x:scroll;
+    
+}
+.circle_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.circle_text p{
+    color: #052659;
+    display: none;
+}
+
+.years_flexBox::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.years_box:hover>.circle{
+
+    box-shadow: inset 0px 0px 10px 2px #54b35c;
+
+}
+.years_box:hover{
+
+    box-shadow: 2px 2px 2px 2px #052659;
+    border: 2px double black;
+}
+.years_box:active{
+
+    box-shadow: 1px 1px 1px 1px black;
+    border: 2px double #052659;
+
+}
+.years_box:hover p{
+
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+/*table area*/
+
+.table_box{
+    padding: 5%;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.table_box::webkit-scrollbar{
+    display: none;
+}
+.table_box table{
+
+    margin: 0px auto;
+    width: 90%;
+    table-layout: auto;
+    
+    /* height: 70vh; */
+
+}
+
+table,td,th{
+    border:1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    /* border-radius: 2px; */
+    padding: 15px;
+    background-color: #C1E8FF;
+}
+td,th{
+    margin: 10px;
+    /* border: 1px solid !important; */
+    word-wrap:break-word;
+    word-break:keep-all;
+}
+
+td, th{
+    border:none;
+    border-bottom: 1px solid black;
+}
+td span, td a{
+    color: #021024;
+}
+th{
+    background-color: #7DA0CA;
+}
+.pdfcell:active{
+    background-color: #7DA0CA;
+    border-top:0px solid black;
+    border-left:0px solid black;
+    box-shadow: 1px 0.5px 1px 1px #021024;
+}
+.pdfcell:hover{
+
+    border-top:1px double #021024;
+    border-left:1px double #021024;
+    box-shadow: 3px 2px 4px 3px black;
+}
+
+table>caption{
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 10px;
+    letter-spacing: 2px!important;
+}
+
+
+
+/*footer*/
+footer{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 6vh;
+
+    font-size: x-small;
+
+    background-color: #021024;
+}
+footer p, footer a{
+
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform:uppercase;
+
+}
+.githubs_footer{
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+.githubs_footer>p>a:link{
+
+    text-decoration: none;
+
+
+}
+.githubs_footer>p>a:hover{
+
+    text-decoration: none;
+    /* color: yellow; */
+    box-shadow: 1px 1px 1px 1px white;
+
+
+}
+
+
+/*extra addings*/
+
+.year_name_below_circle{
+    color: #021024;
+    display: block;
+    font-size: larger;
+    font-weight: 500;
+}
+.years_box:hover .year_name_below_circle{
+    display: none;
+}
+.hyper_links_to_table{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+#mobile{
+    display: none;
+}
+
+.logo:hover{
+    box-shadow: 1px 1px 2px 2px black;
+}
+.logo:active{
+    box-shadow: 1px 1px 2px 2px white;
+}
+#search_button:active{
+    background-color: #021024;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+ 
+@media only screen and (max-width:600px){
+    body>*:not(#mobile){
+        display: none;
+    }
+    body{
+        background-image: radial-gradient(circle at center, #5483b3, #052659);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 100vh;
+
+    }
+    #mobile{
+        color: white;
+        margin: 20px;
+        display: flex;
+        border: 1px solid blanchedalmond;
+        box-shadow: 1px 1px 1px 1px black;
+        padding: 13px;
+        text-align: center;
+
+    }
+    #mobile:active{
+        box-shadow: 1px 1px 1px 1px red;
+    }
+}
