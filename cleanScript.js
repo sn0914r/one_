@@ -334,6 +334,7 @@ const single_subject_array = [
 const search_button = document.getElementById("search_button");
 search_button.onclick = function(){
     const search_value = document.getElementsByTagName("input")[0].value.trim().toLowerCase();
+    document.getElementsByTagName("input")[0].value = " ";
     if (single_subject_array.includes(search_value)){
         let year;
         if (single_subject_array.indexOf(search_value)<=12){
