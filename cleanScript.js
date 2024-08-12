@@ -366,7 +366,7 @@ header.onclick = function(){
 
 const screenWidth = window.innerWidth;
 if (screenWidth<767){
-    document.getElementsByClassName("mainLOGO")[0].setAttribute("src","whiteBars.png");
+    document.getElementsByClassName("mainLOGO")[0].setAttribute("src","whitebars.png");
 }
 
 const cross = document.getElementsByClassName("cross")[0];
