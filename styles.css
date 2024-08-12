@@ -16,7 +16,6 @@ body{
     display: flex;
     flex-direction: column;
     /* background-image: linear-gradient(to bottom, #c1e8ff, #7da0c8); */
-    background-image:;
     
 }
 
@@ -382,9 +381,11 @@ header{
     position: sticky;
     top: 0px;
 }
-
+.cross{
+    display: none;
+}
  
-@media only screen and (max-width:600px){
+/* @media only screen and (max-width:600px){
     body>*:not(#mobile){
         display: none;
     }
@@ -410,5 +411,108 @@ header{
     }
     #mobile:active{
         box-shadow: 1px 1px 1px 1px red;
+    }
+} */
+
+@media only screen and (max-width: 767px){
+    .search_filter_box{
+        height: 25vh;
+    }
+    .searchBar_input>input{
+        width: 200px;
+        height: 30px;
+        padding: 15px;
+        margin: 5px initial;
+        /* background-color: green; */
+    }
+    .text_above_searchBar{
+        font-size: 11px;
+    }
+    .line_above_searchBar{
+        width: 250px;
+    }
+    #search_button{
+
+        height: 30px;
+        padding-top: 2px;
+        padding-bottom: 1px;
+    }
+    main{
+        display: flex;
+    }
+    .years_flexBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        flex: 1 1 30vh;
+    }
+    .circle{
+        display: none;
+    }
+    .years_box{
+        display: inline-block;
+        /* background-color: red; */
+        overflow-x:initial;
+        width: 20px;
+        height: fit-content;
+        border: 1px solid #bbbbb5;
+        padding: 2px 2px;
+    }
+    .circle_text>p{
+        font-size: smaller;
+        letter-spacing: 1px;
+    }
+    .year_name_below_circle{
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    .circle_text:active{
+        box-shadow: 2px 2px 2px 2px #d9d9d9;
+        border: 2px double black;
+        color: yellow;
+    }
+    .years_box:hover{
+
+        box-shadow: initial;
+        border:initial;
+    }
+    header>nav{
+        /* display: none; */
+        
+    }  
+    header{
+        position: relative;
+    }
+    nav>ol{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #101f36;
+        left: 0px;
+        top: 0px;
+        width: 80%;
+        height: 100vh;
+        z-index: -1;
+        padding: 50px;
+        justify-content: flex-start;
+        align-items: center;
+        color: #021024;
+        
+    }
+    .cross{
+        display: block;
+        position: absolute;
+        right: 100px;
+        width: 20px;
+        z-index: -2;
+        /* background-color: yellow; */
+    }
+    body{
+        height: 100vh;
+    }
+    .mainLOGO{
+        width: 45px;
+        padding-top: 4px;
     }
 }
