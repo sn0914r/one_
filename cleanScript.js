@@ -42,11 +42,11 @@ let downloads_array = [
         [null,null,null],// Basic Civil Engineering
         [null,null,null],// Basic Mechanical Engineering
         [null,null,null],// Introduction to Programming
-        ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf",null],// Engineering Physics
+        ["pdf/firstYear/Engineering_Physics","pdf/firstYear/Engineering_Physics_AnswerBank.pdf",null],// Engineering Physics
         ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf",null,null],// Differential Equations & Vector Calculus
         ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,null],// Basic Electrical Engineering
         [null,null,null],// Basic Electronics Engineering
-        ["pdf/firstYear/Data_Structures.pdf","pdf/firstYear/Data_Structures_AnswerBank.pdf",null], // Data Structures
+        ["pdf/firstYear/Data_Structures","pdf/firstYear/Data_Structures_AnswerBank.pdf",null], // Data Structures
         ["pdf/firstYear/Engineering_Graphics.pdf","pdf/firstYear/Engineering_Graphics_AnswerBank.pdf",null]//Engineering Graphics
     ], //1st year
     [null], //2nd year
@@ -357,3 +357,44 @@ const about = document.getElementById("aboutNav");
 about.onclick = function(){
     alert("Not available");
 }
+
+
+const header = document.getElementsByTagName("header")[0];
+header.onclick = function(){
+    document.getElementsByTagName("nav")[0].style.display = "block";
+}
+
+const screenWidth = window.innerWidth;
+if (screenWidth<767){
+    document.getElementsByClassName("mainLOGO")[0].setAttribute("src","whiteBars.png");
+}
+
+const cross = document.getElementsByClassName("cross")[0];
+cross.onclick = function(){
+    cross.style.zIndex = "-1";
+    document.getElementsByTagName("ol")[0].style.zIndex = "-1";
+}
+const navButton = document.getElementsByClassName("logo")[0];
+navButton.onclick = function(){
+    cross.style.zIndex = "1";
+    document.getElementsByTagName("ol")[0].style.zIndex = "1";
+}
+const home = document.getElementById("home");
+const pdfss = document.getElementById("pdf");
+const navBarr = document.getElementById("aboutNav");
+home.addEventListener("click",function(){
+    cross.style.zIndex = "-1";
+    document.getElementsByTagName("ol")[0].style.zIndex = "-1";
+    console.log("Nav Bar closed by home");
+})
+pdfss.addEventListener("click",function(){
+    cross.style.zIndex = "-1";
+    document.getElementsByTagName("ol")[0].style.zIndex = "-1";
+    console.log("Nav Bar closed by pdfss");
+})
+
+navBarr.addEventListener("click",function(){
+    cross.style.zIndex = "-1";
+    document.getElementsByTagName("ol")[0].style.zIndex = "-1";
+    console.log("Nav Bar closed by aboutNavv");
+})
