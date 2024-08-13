@@ -16,7 +16,7 @@ function update_serial_numbers(num){
 //changing subjects
 const subject = document.getElementsByClassName("subject_name");
 const all_subjects = [
-    ["Communicative English","Chemistry","Linear Algebra & Calculus","Basic Civil Engineering","Basic Mechanical Engineering","Introduction to Programming","Engineering Physics","Differential Equations & Vector Calculus","Basic Electrical Engineering ","Basic Electronics Engineering","Data Structures","Engineering Graphics"],
+    ["Communicative English","Engineering Chemistry","Linear Algebra & Calculus","Basic Civil Engineering","Basic Mechanical Engineering","Introduction to Programming","Engineering Physics","Differential Equations & Vector Calculus","Basic Electrical Engineering ","Basic Electronics Engineering","Data Structures","Engineering Graphics"],
     ["Discrete Mathematics and Graph Theory","Universal Human Values","Principles of Artificial Intelligence","Advanced Data Structures and Algorithm Analysis","Object Oriented Programming and Through Java","Environmental Science","Optimization Techniques","Probability and Statistics","Machine Learning","Database Management Systems","Digital Logic & Computer Organization"],
     [null],
     [null]
@@ -76,7 +76,7 @@ function create_table_row(){
 
                 const table_cell_1 = document.createElement('td');
                 table_cell_1.appendChild(spanTag);
-                table_cell_1.setAttribute("data-label","S.No : ");
+                // table_cell_1.setAttribute("data-label","S.No : ");
                 new_table_row.appendChild(table_cell_1);
                 console.log("1st cell created successfully");
                 break;
@@ -87,7 +87,7 @@ function create_table_row(){
 
                 const table_cell_2= document.createElement('td');
                 table_cell_2.appendChild(spanTagForSubject);
-                table_cell_2.setAttribute("data-label","Subject : ");
+                // table_cell_2.setAttribute("data-label","Subject : ");
                 new_table_row.appendChild(table_cell_2);
 
                 console.log("2nd cell created successfully");
