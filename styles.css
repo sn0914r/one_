@@ -415,6 +415,9 @@ header{
 } */
 
 @media only screen and (max-width: 767px){
+    *{
+        font-family: 'Times New Roman', Times, serif!important;
+    }
     .search_filter_box{
         height: 25vh;
     }
@@ -445,7 +448,7 @@ header{
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
-        flex: 1 1 30vh;
+        height : 35vh;
     }
     .circle{
         display: none;
