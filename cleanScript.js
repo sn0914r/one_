@@ -408,3 +408,7 @@ navBarr.addEventListener("click",function(){
     document.getElementsByTagName("ol")[0].style.zIndex = "-1";
     console.log("Nav Bar closed by about Navv");
 })
+const sscreenWidth = window.innerWidth;
+if (sscreenWidth<767){
+    document.getElementsByTagName("th")[0].style.display = "none";
+}
