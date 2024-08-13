@@ -542,7 +542,7 @@ header{
         /* white-space:normal; */
         /* overflow-wrap: break-word; */
     }
-    td::before{
+    td:not(:has(span.subject_name))::before{
         content : attr(data-label);
         /* float:right; */
         font-weight:bold;
@@ -552,5 +552,16 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .serial_number{
+        display: none;
+    }
+    .subject_name{
+        display: block;
+        font-size:1.5rem;
+        word-break: normal; 
+        text-wrap:balance;
+        text-align: center;
     }
 }
