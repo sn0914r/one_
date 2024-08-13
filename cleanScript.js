@@ -17,7 +17,7 @@ function update_serial_numbers(num){
 const subject = document.getElementsByClassName("subject_name");
 const all_subjects = [
     ["Communicative English","Chemistry","Linear Algebra & Calculus","Basic Civil Engineering","Basic Mechanical Engineering","Introduction to Programming","Engineering Physics","Differential Equations & Vector Calculus","Basic Electrical Engineering ","Basic Electronics Engineering","Data Structures","Engineering Graphics"],
-    ["Discrete Mathematics & Graph Theory","Universal Human Values","Principles of Artificial Intelligence","Advanced Data Structures & Algorithm Analysis","Object Oriented Programming Through Java","Environmental Science","Optimization Techniques","Probability & Statistics","Machine Learning","Database Management Systems","Digital Logic & Computer Organization"],
+    ["Discrete Mathematics and Graph Theory","Universal Human Values","Principles of Artificial Intelligence","Advanced Data Structures and Algorithm Analysis","Object Oriented Programming and Through Java","Environmental Science","Optimization Techniques","Probability and Statistics","Machine Learning","Database Management Systems","Digital Logic & Computer Organization"],
     [null],
     [null]
 ] 
@@ -36,13 +36,13 @@ function update_subjects(subjectArray){
 //to manipulate PDFS
 let downloads_array = [
     [ //[0,0]
-        [null,null,null],// QB, AB, CW for Communicative English - [0][0][]
-        [null,null,null],// chemistry
-        [null,null,null],// Linear Algebra & Calculus
+        ["pdf/firstYear/Communicative_English.pdf",null,"pdf/firstYear/Communicative_English_material.pdf"],// QB, AB, CW for Communicative English - [0][0][]
+        ["pdf/firstYear/Chemistry.pdf",null,"pdf/firstYear/Chemistry_material.pdf"],// chemistry
+        ["pdf/firstYear/Linear_Algebra_and_Calculus.pdf",null,null],// Linear Algebra & Calculus
         [null,null,null],// Basic Civil Engineering
-        [null,null,null],// Basic Mechanical Engineering
-        [null,null,null],// Introduction to Programming
-        ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf",null],// Engineering Physics
+        ["pdf/firstYear/Basic_mechanical_engineering.pdf",null,null],// Basic Mechanical Engineering
+        ["pdf/firstYear/Introduction_to_Programming.pdf",null,null],// Introduction to Programming
+        ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf","pdf/firstYear/Engineering_Physics_notes.pdf"],// Engineering Physics
         ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf",null,null],// Differential Equations & Vector Calculus
         ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,null],// Basic Electrical Engineering
         [null,null,null],// Basic Electronics Engineering
@@ -76,8 +76,8 @@ function create_table_row(){
 
                 const table_cell_1 = document.createElement('td');
                 table_cell_1.appendChild(spanTag);
+                table_cell_1.setAttribute("data-label","S.No : ");
                 new_table_row.appendChild(table_cell_1);
-
                 console.log("1st cell created successfully");
                 break;
             case 1:
@@ -87,6 +87,7 @@ function create_table_row(){
 
                 const table_cell_2= document.createElement('td');
                 table_cell_2.appendChild(spanTagForSubject);
+                table_cell_2.setAttribute("data-label","Subject : ");
                 new_table_row.appendChild(table_cell_2);
 
                 console.log("2nd cell created successfully");
@@ -102,6 +103,7 @@ function create_table_row(){
 
                 const table_cell_3 = document.createElement('td');
                 table_cell_3.appendChild(a_tag_for_qb);
+                table_cell_3.setAttribute("data-label","Qns-Bank :");
                 new_table_row.append(table_cell_3);
 
                 console.log("3rd cell added successfully");
@@ -116,6 +118,7 @@ function create_table_row(){
 
                 const table_cell_4 = document.createElement('td');
                 table_cell_4.appendChild(a_tag_for_ab);
+                table_cell_4.setAttribute("data-label","Ans-Bank :");
                 new_table_row.append(table_cell_4);
 
                 console.log("4th cell added successfully");
@@ -130,6 +133,7 @@ function create_table_row(){
 
                 const table_cell_5 = document.createElement('td');
                 table_cell_5.appendChild(a_tag_for_cw);
+                table_cell_5.setAttribute("data-label","Cls-Work : ");
                 new_table_row.append(table_cell_5);
 
                 console.log("5th cell added successfully");
@@ -287,6 +291,13 @@ function main_control(){
     table_body.appendChild(new_row);
     new_cell.setAttribute("colSpan","5");
     table_body.style.height = "60vh";
+    const screenx = window.innerWidth;
+    if (screenx<767){
+        new_cell.innerHTML = "Select a year<br>to view available PDFs";
+        table_body.style.height = "25vh";
+        new_row.style.display = "flex";
+        table_body.style.width = "20px";
+    }
 
     for(let i=0;i<4;i++){
         document.getElementsByClassName("years_box")[i].addEventListener("click",function(){
@@ -343,7 +354,6 @@ search_button.onclick = function(){
             year = "Second"
         }
         alert(`
-            The search functionality is incomplete\n
             PDFs for the subject are available\n
             please select ${year} year`)
     }else{
@@ -396,5 +406,5 @@ pdfss.addEventListener("click",function(){
 navBarr.addEventListener("click",function(){
     cross.style.zIndex = "-1";
     document.getElementsByTagName("ol")[0].style.zIndex = "-1";
-    console.log("Nav Bar closed by aboutNavv");
+    console.log("Nav Bar closed by about Navv");
 })
