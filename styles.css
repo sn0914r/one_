@@ -515,4 +515,39 @@ header{
         width: 45px;
         padding-top: 4px;
     }
+    /*add*/
+    footer{
+        height: 30vh;
+        padding: 15px;
+    }
+    table{
+        width: 80%;
+        overflow-x: hidden;
+    }
+    thead{
+        display: none;
+    }
+    td{
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+    }
+    td>span{
+        /* content: "<br>"; */
+        /* word-break: break-all; */
+        text-wrap:balance;
+        /* white-space:normal; */
+        /* overflow-wrap: break-word; */
+    }
+    td::before{
+        content : attr(data-label);
+        /* float:right; */
+        font-weight:bold;
+        /* word-break: break-all; */
+        color: #021024;
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
