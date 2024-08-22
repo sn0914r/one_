@@ -45,7 +45,7 @@ let downloads_array = [
         ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf","pdf/firstYear/Engineering_Physics_notes.pdf"],// Engineering Physics
         ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf",null,null],// Differential Equations & Vector Calculus
         ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,null],// Basic Electrical Engineering
-        [null,null,null],// Basic Electronics Engineering
+        ["pdf/firstYear/BEEE_Question_Bank.pdf",null,null],// Basic Electronics Engineering
         ["pdf/firstYear/Data_Structures.pdf","pdf/firstYear/Data_Structures_AnswerBank.pdf",null], // Data Structures
         ["pdf/firstYear/Engineering_Graphics.pdf","pdf/firstYear/Engineering_Graphics_AnswerBank.pdf",null]//Engineering Graphics
     ], //1st year
