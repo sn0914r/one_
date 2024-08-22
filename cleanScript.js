@@ -38,14 +38,14 @@ let downloads_array = [
     [ //[0,0]
         ["pdf/firstYear/Communicative_English.pdf",null,"pdf/firstYear/Communicative_English_material.pdf"],// QB, AB, CW for Communicative English - [0][0][]
         ["pdf/firstYear/Chemistry.pdf",null,"pdf/firstYear/Chemistry_material.pdf"],// chemistry
-        ["pdf/firstYear/Linear_Algebra_and_Calculus.pdf",null,null],// Linear Algebra & Calculus
+        ["pdf/firstYear/Linear_Algebra_and_Calculus.pdf",null,"pdf/firstYear/LAandC_Notes.pdf"],// Linear Algebra & Calculus
         [null,null,null],// Basic Civil Engineering
-        ["pdf/firstYear/Basic_mechanical_engineering.pdf",null,null],// Basic Mechanical Engineering
+        ["pdf/firstYear/Basic_mechanical_engineering.pdf","BME_AnswerBank.pdf",null],// Basic Mechanical Engineering
         ["pdf/firstYear/Introduction_to_Programming.pdf",null,null],// Introduction to Programming
         ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf","pdf/firstYear/Engineering_Physics_notes.pdf"],// Engineering Physics
-        ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf",null,null],// Differential Equations & Vector Calculus
+        ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf","DEVC_AnswerBank.pdf",null],// Differential Equations & Vector Calculus
         ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,null],// Basic Electrical Engineering
-        ["pdf/firstYear/BEEE_Question_Bank.pdf",null,null],// Basic Electronics Engineering
+        ["pdf/firstYear/BEEE_Question_Bank.pdf",null,"pdf/firstYear/BEEE_ClassWork_PartB-compressed.pdf"],// Basic Electronics Engineering
         ["pdf/firstYear/Data_Structures.pdf","pdf/firstYear/Data_Structures_AnswerBank.pdf",null], // Data Structures
         ["pdf/firstYear/Engineering_Graphics.pdf","pdf/firstYear/Engineering_Graphics_AnswerBank.pdf",null]//Engineering Graphics
     ], //1st year
