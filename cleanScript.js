@@ -217,7 +217,7 @@ function update_flexBox_total_subjects(year){
 function update_flexBox_available_subjects(year){
     const available_subjects = document.getElementsByClassName("available_pdfs");
     if(downloads_array[year].length!==1){ //-----------------------------------------------------------------------------------------------------------------------------------------------------------
-        available_subjects[year].innerHTML = `Available : ${downloads_array[year].length}`; 
+        available_subjects[year].innerHTML = `Available : ${downloads_array[year].length-1}`; //----CIVIL Not Avaiilable
     }else{
         available_subjects[year].innerHTML = "Not Available"; 
     }
