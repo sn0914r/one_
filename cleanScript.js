@@ -43,8 +43,8 @@ let downloads_array = [
         ["pdf/firstYear/Basic_mechanical_engineering.pdf","BME_AnswerBank.pdf",null],// Basic Mechanical Engineering
         ["pdf/firstYear/Introduction_to_Programming.pdf",null,null],// Introduction to Programming
         ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf","pdf/firstYear/Engineering_Physics_notes.pdf"],// Engineering Physics
-        ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf","DEVC_AnswerBank.pdf",null],// Differential Equations & Vector Calculus
-        ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,"BEEE_PART_A_compressed.pdf"],// Basic Electrical Engineering (Part A)
+        ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf","pdf/firstYear/DEVC_AnswerBank.pdf",null],// Differential Equations & Vector Calculus
+        ["pdf/firstYear/Basic_Electrical_Engineering.pdf",null,"pdf/firstYear/BEEE_PART_A_compressed.pdf"],// Basic Electrical Engineering (Part A)
         ["pdf/firstYear/BEEE_Question_Bank.pdf",null,"pdf/firstYear/BEEE_ClassWork_PartB-compressed.pdf"],// Basic Electronics Engineering (Part B)
         ["pdf/firstYear/Data_Structures.pdf","pdf/firstYear/Data_Structures_AnswerBank.pdf",null], // Data Structures
         ["pdf/firstYear/Engineering_Graphics.pdf","pdf/firstYear/Engineering_Graphics_AnswerBank.pdf",null]//Engineering Graphics
@@ -337,10 +337,10 @@ const single_subject_array = [
     "communicative english", "chemistry", "linear algebra and calculus", "basic civil engineering", "basic mechanical engineering", 
     "introduction to programming", "engineering physics", "differential equations and vector calculus", "basic electrical engineering", 
     "basic electronics engineering", "data structures", "engineering graphics", 
-    "discrete mathematics and graph theory", "universal human values", "principles of artificial intelligence", 
+    /*"discrete mathematics and graph theory", "universal human values", "principles of artificial intelligence", 
     "advanced data structures and algorithm analysis", "object oriented programming through java", "environmental science", 
     "optimization techniques", "probability and statistics", "machine learning", "database management systems", 
-    "digital logic and computer organization"
+    "digital logic and computer organization"*/
 ]
 const search_button = document.getElementById("search_button");
 search_button.onclick = function(){
