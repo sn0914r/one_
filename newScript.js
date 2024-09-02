@@ -214,9 +214,7 @@ searchButton.addEventListener('click',function(){
     let isFound = false;
     const searchBar = document.querySelector('input');
     const userInput = searchBar.value.toLowerCase().trim();
-    const allYears = Object.keys(pDFsObject);
-    allYears.pop();
-    allYears.pop();
+    const allYears = Object.keys(pDFsObject);
     console.log(allYears);
     for (let year of allYears){
         if (year!=null){
