@@ -214,7 +214,9 @@ searchButton.addEventListener('click',function(){
     let isFound = false;
     const searchBar = document.querySelector('input');
     const userInput = searchBar.value.toLowerCase().trim();
-    const allYears = Object.keys(pDFsObject);
+    const allYears = Object.keys(pDFsObject);
+
+
     console.log(allYears);
     for (let year of allYears){
         if (year!=null){
@@ -254,17 +256,15 @@ searchButton.addEventListener('click',function(){
 
 });
 
-setTimeout(function(){
-    const anchorTags = Array.from(document.getElementsByTagName('a')).filter(e=>e.innerHTML=='Available'?true:false);
+(function() {
+    const anchorTags = Array.from(document.getElementsByTagName('a')).filter(e => e.innerHTML=== 'Not available');
     anchorTags.forEach(e=>{
-        console.log('hi')
-        if (e.innerHTML=='Available'){
-            e.onclick = function(){
-                alert('downloading...');
-            }
-        }
-    })
-},2000);
+        e.addEventListener('click',function() {
+            alert('Downloading...');
+        });
+    });
+})();
+
 const row = document.createElement("tr");
 const cell = document.createElement("td");
 cell.innerHTML = "SELECT THE APPROPRIATE YEAR TO VIEW THE AVAILABLE PDFS";
