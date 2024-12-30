@@ -40,7 +40,7 @@ let downloads_array = [
         ["pdf/firstYear/Chemistry.pdf",null,"pdf/firstYear/Chemistry_material.pdf"],// chemistry
         ["pdf/firstYear/Linear_Algebra_and_Calculus.pdf",null,"pdf/firstYear/LAandC_Notes.pdf"],// Linear Algebra & Calculus
         [null,null,null],// Basic Civil Engineering
-        ["pdf/firstYear/Basic_mechanical_engineering.pdf","BME_AnswerBank.pdf",null],// Basic Mechanical Engineering
+        ["pdf/firstYear/Basic_mechanical_engineering.pdf","pdf/firstYear/BME_AnswerBank.pdf",null],// Basic Mechanical Engineering
         ["pdf/firstYear/Introduction_to_Programming.pdf",null,null],// Introduction to Programming
         ["pdf/firstYear/Engineering_Physics.pdf","pdf/firstYear/Engineering_Physics_AnswerBank.pdf","pdf/firstYear/Engineering_Physics_notes.pdf"],// Engineering Physics
         ["pdf/firstYear/Differential_Equations_and_Vector_Calculus.pdf","pdf/firstYear/DEVC_AnswerBank.pdf",null],// Differential Equations & Vector Calculus
