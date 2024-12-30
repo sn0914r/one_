@@ -19,7 +19,7 @@ const pDFsObject = {
       },
       subject_5 : {
         subjectName : "Basic Mechanical Engineering",
-        pDFs : ["pdf/firstYear/Basic_mechanical_engineering.pdf", "BME_AnswerBank.pdf", null]
+        pDFs : ["pdf/firstYear/Basic_mechanical_engineering.pdf", "pdf/firstYear/BME_AnswerBank.pdf", null]
       },
       subject_6 : {
         subjectName : "Introduction to Programming",
