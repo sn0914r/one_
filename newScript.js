@@ -97,8 +97,8 @@ const pDFsObject = {
         pDFs : null
       }
     },
-    // thirdYear : null,
-    // fourthYear : null
+    thirdYear : null,
+    fourthYear : null
 };
 const createTableRow=()=>{
     const tableRow =  document.createElement('tr');
@@ -171,7 +171,7 @@ const createTable=year=>{
             const pointer = pDFsObject[allYears[year]];
             let serialNumber = 1;
             subjectNumbers.forEach(e=>{
-                if (pointer[e].pDFs!=null){
+                if (pointer[e].pDFs!=null){ 
                     let row = createTableRow();
                     row.children[0].firstChild.innerHTML = serialNumber;
                     serialNumber++;
