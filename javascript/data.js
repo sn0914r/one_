@@ -30,4 +30,4 @@ const SUBJECTS = {
   fourthYear: null
 };
 
-export default SUBJECTS
+export default SUBJECTS;

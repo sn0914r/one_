@@ -212,7 +212,7 @@ function update_flexBox_total_subjects(year){
     }
 
     console.log(`TOTAL SUBJECTS : ${update_years_flexbox[year]} Updated`);
-}
+}   
 //updates available_subjects
 function update_flexBox_available_subjects(year){
     const available_subjects = document.getElementsByClassName("available_pdfs");

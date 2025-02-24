@@ -229,7 +229,7 @@ main{
 
 
 
-
+circle_text_4 circle_text
 
 
 
@@ -381,7 +381,7 @@ header{
     position: sticky;
     top: 0px;
 }
-.cross{
+#cross{
     display: none;
 }
  
@@ -503,7 +503,7 @@ header{
         color: #021024;
         
     }
-    .cross{
+    #cross{
         display: block;
         position: absolute;
         right: 100px;

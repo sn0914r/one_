@@ -10,16 +10,16 @@
     <!--Header-->
     <header>
         <!--logo-->
-        <div class="logo"><img src="logo2.png" alt="PDFimg" width="55" height="40"  class="mainLOGO"></div>
+        <div class="logo"><img src="/assets/icons/logo2.png" alt="PDFimg" width="55" height="40"  class="mainLOGO"></div>
         <!--navbar-->
-        <nav>
+        <nav id="navbar">
             <ol>
                 <li><a href="#searchBarBox" id="home">Home</a></li>
                 <li><a href="#flexbox" id="pdf">PDFs</a></li>
-<!--                 <li><a href="" id="aboutNav">About</a></li> -->
-                <li><a href="pdf/firstYear/r23Syllabus.pdf" id="aboutNav" >Syllabus</a></li>
+                <li><a href="" id="aboutNav">About</a></li>
+                <li><a href="pdf/firstYear/r23Syllabus.pdf" id="syllabus">Syllabus</a></li>
             </ol>
-            <div ><img src="close.png" alt="er" class="cross"></div>
+            <div ><img src="/assets/icons/close.png" alt="er" id="cross"></div>
         </nav>
 
     </header>    
@@ -46,7 +46,7 @@
         <div class="years_flexBox" id="flexbox">
 
             <!--Year 1-->
-            <a href="#show_table" class="hyper_links_to_table" data-id="year1">
+            <a href="#show_table" class="hyper_links_to_table" data-id="1">
                 <div class="years_box mobileflex1 year1">
                     <!--circle-->
                     <div class="circle circle_1">I</div>
@@ -62,7 +62,7 @@
             <!--Year 1 end-->
 
             <!--Year 2-->
-            <a href="#show_table" class="hyper_links_to_table" data-id="year2">
+            <a href="#show_table" class="hyper_links_to_table" data-id="2">
                 <div class="years_box mobileflex1 year2">
                     <!--circle-->
                     <div class="circle circle_2">II</div>
@@ -78,7 +78,7 @@
             <!--Year 2 end-->
 
             <!--Year 3-->
-            <a href="#show_table" class="hyper_links_to_table" data-id="year3">
+            <a href="#show_table" class="hyper_links_to_table" data-id="3">
                 <div class="years_box year3">
                         <!--circle-->
                         <div class="circle circle_3">III</div>
@@ -94,7 +94,7 @@
             <!--Year 3 end-->
 
             <!--Year 4-->
-            <a href="#show_table" class="hyper_links_to_table" data-id="year4">
+            <a href="#show_table" class="hyper_links_to_table" data-id="4">
                 <div class="years_box year4">
                     <!--circle-->
                     <div class="circle circle_4">IV</div>
@@ -106,6 +106,7 @@
                     <div class="year_name_below_circle"> Year 4</div>
                     </div>
                 </div> 
+            </a>
             <!--Year 4 end-->
 
         </div>
@@ -117,7 +118,7 @@
             <table id="sshow_table">
 
                 <!--caption : year Number -->
-                <caption><span id="year_caption"> Select any </span>year :-</caption>
+                <caption><span id="year_caption" > Select any </span>year :-</caption>
 
                 <!--table header-->
                 <thead>
@@ -133,7 +134,7 @@
 
                 <!--table body-->
                 <tbody id="table_body">
-
+                    
                 </tbody>
                 <!--table body end-->
 
@@ -157,7 +158,7 @@
 
         </div>
     </footer>
-    <script src="newScript.js" defer></script>
-     <!-- <script src="javascript/index.js" defer></script> -->
+    <!-- <script src="old_files/cleanScript.js" defer></script> -->
+    <script src="javascript/index.js" type="module" defer></script>
 </body>
 </html>
