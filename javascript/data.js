@@ -31,3 +31,31 @@ const SUBJECTS = {
 };
 
 export default SUBJECTS;
+
+const searchFunction = () => {
+  const searchBtn = document.querySelector("#search_button");
+  const tblBody = document.querySelector("tbody");
+  const entries = Object.entries(SUBJECTS);
+  const convert = (s) => s.trim().toLowerCase().replaceAll("&", "and");
+
+  searchBtn.addEventListener("click", () => {
+      let searchFilterArray = [];
+      tblBody.innerHTML = "";
+      const input = convert(document.querySelector("#searchBar").value);
+
+      entries.forEach(([key, value]) => {
+          if (value !== null) {
+              const subEntries = Object.entries(value);
+              subEntries.forEach(([subKey, subValue]) => {
+                  console.log("%c" + subKey, "color:blue");
+                  if (convert(subKey).includes(input)) {
+                      searchFilterArray.push([subKey, subValue]);
+                  }
+              });
+          }
+      });
+
+      console.log("Filtered items:", searchFilterArray);
+      // You can now update the table with `searchFilterArray`
+  });
+};

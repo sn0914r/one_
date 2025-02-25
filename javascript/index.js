@@ -98,12 +98,12 @@ const flexBox=()=>{
     const getSubjects =(year)=>{
         console.log("keys :",keys[year-1])
         console.log("SUBJECTS :",SUBJECTS[keys[year-1]])
-        if (SUBJECTS[keys[year-1]]===null) return ["Not available","Not available"];
+        if (SUBJECTS[keys[year-1]]===null) return ["N/A","N/A"];
         const pdfsObject = Object.values(SUBJECTS[keys[year-1]]);
         const pdfObjKeys = Object.keys(pdfsObject) || null;
         const totalSubjects = pdfObjKeys.length || null;
         let counter = 0;
-        if (pdfObjKeys===null) return ["Not available","Not available"];
+        if (pdfObjKeys===null) return ["N/A","N/A"];
         pdfObjKeys.forEach(e=>{
             pdfsObject[e]!==null && counter++;
         })
@@ -120,9 +120,43 @@ const selectionBar=flexBox();
 [1,2,3,4].forEach(e=>selectionBar(e));
 
 const searchFunction=()=>{
-    const searchBtn = document.querySelector("#search_button");    
-    searchBtn.addEventListener("click",()=>{
-        alert("Working on it")
-    })
+    const searchBtn = document.querySelector("#search_button"); 
+    const tblBody = document.querySelector('tbody');  
+    const entries = Object.entries(SUBJECTS); 
+    const convert=s=>s.trim().toLowerCase().replaceAll("&","and");
+    let searchFilterArray;
+    return ()=>{
+        searchBtn.addEventListener("click",()=>{
+            console.log(entries);
+            searchFilterArray=[];
+            tblBody.innerHTML='';
+            const input = convert(document.querySelector("#searchBar").value);
+            if (input.length===0){
+                alert("input field empty");
+                return;
+            }
+            // const input = "chem";
+            entries.forEach(([k, v])=>{
+                console.log(k);
+                console.log(v);
+                if (v!==null){
+                    console.log("not null values", v)
+                    const innerEntries = Object.entries(v);
+                    innerEntries.forEach(e=>{
+                        console.log("sub", convert(e[0]));
+                        if (convert(e[0]).includes(input)){
+                            console.log("%ctrue","color:red");
+                            searchFilterArray.push([e,k]);
+                        }
+                    })
+                }
+            })
+            console.log("filtered items", searchFilterArray);
+            searchFilterArray.forEach(([[subNames, pdfs],year],i)=>{
+                tblBody.appendChild(tblRow(year, i+1, subNames, ...pdfs||''));
+            })
+        })
+    }
 }
-searchFunction();
+const search = searchFunction();
+search();
